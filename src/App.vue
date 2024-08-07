@@ -1,9 +1,10 @@
 <script setup>
-const mun = ref(2)
+// setup不用 return
+import { ref } from 'vue'
+const num = ref(2)
 function clickMe() {
   num.value++
 }
-return { num, clickMe }
 </script>
 
 <template>
